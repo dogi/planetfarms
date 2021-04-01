@@ -296,5 +296,3 @@ const X0212SignUperrorData = {
     vector22: "",
     lockoutlineProps: lockoutlineData,
 };
-
-
