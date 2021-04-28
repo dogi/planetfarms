@@ -39,10 +39,8 @@ const addResource = (req, res) => {
     title, author, year, description, tag, language, publisher, linkToLicense, subject, level, mediaType, resourceFor, openWith, resourceType, isDownloadable, attachments
   } = req.body
 
-  if (req.file) {
-    categoryObj.categoryImage =
-      process.env.API + "/public/" + req.file.filename;
-  }
+  
+  
   Resource.create({
     title, author, year, description, tag, language, publisher, linkToLicense, subject, level, mediaType, resourceFor, openWith, resourceType, isDownloadable, attachments
   })
